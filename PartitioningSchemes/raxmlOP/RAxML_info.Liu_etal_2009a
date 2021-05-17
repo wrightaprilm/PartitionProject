@@ -1,0 +1,987 @@
+
+
+This is RAxML version 8.1.16 released by Alexandros Stamatakis on January 19 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 71 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 21.13%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 11 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 100 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 10
+Name: Subset1
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 1
+Alignment Patterns: 9
+Name: Subset2
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 2
+Alignment Patterns: 25
+Name: Subset3
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 3
+Alignment Patterns: 7
+Name: Subset4
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 4
+Alignment Patterns: 8
+Name: Subset5
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 5
+Alignment Patterns: 3
+Name: Subset6
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 6
+Alignment Patterns: 2
+Name: Subset7
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 7
+Alignment Patterns: 3
+Name: Subset8
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 8
+Alignment Patterns: 2
+Name: Subset9
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 9
+Alignment Patterns: 1
+Name: Subset10
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 10
+Alignment Patterns: 1
+Name: Subset11
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+
+RAxML was called as follows:
+
+/home1/02185/amwright/standard-RAxML-8.1.16/raxmlHPC -fa -s Liu_etal_2009a -m MULTIGAMMA -K MK -q Liu_etal_2009a.phy.best.q -n Liu_etal_2009a -x 1234 -p 12354 -# 100 --asc-corr=lewis 
+
+
+
+Time for BS model parameter optimization 0.036225
+Bootstrap[0]: Time 0.477732 seconds, bootstrap likelihood -668.255228, best rearrangement setting 10
+Bootstrap[1]: Time 0.403637 seconds, bootstrap likelihood -649.406878, best rearrangement setting 15
+Bootstrap[2]: Time 0.339274 seconds, bootstrap likelihood -658.351955, best rearrangement setting 15
+Bootstrap[3]: Time 0.322159 seconds, bootstrap likelihood -681.875623, best rearrangement setting 12
+Bootstrap[4]: Time 0.326278 seconds, bootstrap likelihood -635.110969, best rearrangement setting 9
+Bootstrap[5]: Time 0.380133 seconds, bootstrap likelihood -667.459195, best rearrangement setting 12
+Bootstrap[6]: Time 0.412236 seconds, bootstrap likelihood -624.982387, best rearrangement setting 14
+Bootstrap[7]: Time 0.315124 seconds, bootstrap likelihood -654.957052, best rearrangement setting 10
+Bootstrap[8]: Time 0.374429 seconds, bootstrap likelihood -628.687282, best rearrangement setting 13
+Bootstrap[9]: Time 0.379697 seconds, bootstrap likelihood -642.998766, best rearrangement setting 14
+Bootstrap[10]: Time 0.370612 seconds, bootstrap likelihood -651.463894, best rearrangement setting 14
+Bootstrap[11]: Time 0.427867 seconds, bootstrap likelihood -630.955722, best rearrangement setting 5
+Bootstrap[12]: Time 0.328960 seconds, bootstrap likelihood -657.437420, best rearrangement setting 9
+Bootstrap[13]: Time 0.414920 seconds, bootstrap likelihood -660.990996, best rearrangement setting 10
+Bootstrap[14]: Time 0.423926 seconds, bootstrap likelihood -653.994160, best rearrangement setting 13
+Bootstrap[15]: Time 0.391689 seconds, bootstrap likelihood -671.370638, best rearrangement setting 6
+Bootstrap[16]: Time 0.480724 seconds, bootstrap likelihood -646.511167, best rearrangement setting 15
+Bootstrap[17]: Time 0.393541 seconds, bootstrap likelihood -654.368473, best rearrangement setting 13
+Bootstrap[18]: Time 0.338426 seconds, bootstrap likelihood -604.267736, best rearrangement setting 9
+Bootstrap[19]: Time 0.367919 seconds, bootstrap likelihood -681.771186, best rearrangement setting 8
+Bootstrap[20]: Time 0.388943 seconds, bootstrap likelihood -669.103342, best rearrangement setting 13
+Bootstrap[21]: Time 0.377182 seconds, bootstrap likelihood -652.762146, best rearrangement setting 10
+Bootstrap[22]: Time 0.298846 seconds, bootstrap likelihood -612.052438, best rearrangement setting 5
+Bootstrap[23]: Time 0.362814 seconds, bootstrap likelihood -616.245124, best rearrangement setting 10
+Bootstrap[24]: Time 0.442542 seconds, bootstrap likelihood -658.271670, best rearrangement setting 14
+Bootstrap[25]: Time 0.394532 seconds, bootstrap likelihood -651.510158, best rearrangement setting 7
+Bootstrap[26]: Time 0.387965 seconds, bootstrap likelihood -705.397512, best rearrangement setting 11
+Bootstrap[27]: Time 0.348052 seconds, bootstrap likelihood -665.235357, best rearrangement setting 11
+Bootstrap[28]: Time 0.327162 seconds, bootstrap likelihood -663.120686, best rearrangement setting 8
+Bootstrap[29]: Time 0.315322 seconds, bootstrap likelihood -642.432314, best rearrangement setting 13
+Bootstrap[30]: Time 0.350826 seconds, bootstrap likelihood -631.483844, best rearrangement setting 6
+Bootstrap[31]: Time 0.342578 seconds, bootstrap likelihood -674.095552, best rearrangement setting 9
+Bootstrap[32]: Time 0.384323 seconds, bootstrap likelihood -679.494733, best rearrangement setting 13
+Bootstrap[33]: Time 0.366349 seconds, bootstrap likelihood -660.021843, best rearrangement setting 8
+Bootstrap[34]: Time 0.336585 seconds, bootstrap likelihood -667.964585, best rearrangement setting 8
+Bootstrap[35]: Time 0.312481 seconds, bootstrap likelihood -638.749266, best rearrangement setting 12
+Bootstrap[36]: Time 0.317418 seconds, bootstrap likelihood -637.198427, best rearrangement setting 5
+Bootstrap[37]: Time 0.370245 seconds, bootstrap likelihood -623.576773, best rearrangement setting 8
+Bootstrap[38]: Time 0.335641 seconds, bootstrap likelihood -653.492722, best rearrangement setting 12
+Bootstrap[39]: Time 0.345193 seconds, bootstrap likelihood -649.852385, best rearrangement setting 13
+Bootstrap[40]: Time 0.373106 seconds, bootstrap likelihood -635.803180, best rearrangement setting 14
+Bootstrap[41]: Time 0.350150 seconds, bootstrap likelihood -671.326031, best rearrangement setting 13
+Bootstrap[42]: Time 0.437026 seconds, bootstrap likelihood -626.234876, best rearrangement setting 10
+Bootstrap[43]: Time 0.348225 seconds, bootstrap likelihood -626.122219, best rearrangement setting 13
+Bootstrap[44]: Time 0.367425 seconds, bootstrap likelihood -679.422744, best rearrangement setting 7
+Bootstrap[45]: Time 0.325371 seconds, bootstrap likelihood -660.392187, best rearrangement setting 14
+Bootstrap[46]: Time 0.423721 seconds, bootstrap likelihood -654.956335, best rearrangement setting 14
+Bootstrap[47]: Time 0.353554 seconds, bootstrap likelihood -637.272313, best rearrangement setting 11
+Bootstrap[48]: Time 0.419652 seconds, bootstrap likelihood -688.118373, best rearrangement setting 11
+Bootstrap[49]: Time 0.373059 seconds, bootstrap likelihood -638.150437, best rearrangement setting 15
+Bootstrap[50]: Time 0.388480 seconds, bootstrap likelihood -644.012474, best rearrangement setting 8
+Bootstrap[51]: Time 0.362193 seconds, bootstrap likelihood -639.284486, best rearrangement setting 5
+Bootstrap[52]: Time 0.379802 seconds, bootstrap likelihood -630.034302, best rearrangement setting 7
+Bootstrap[53]: Time 0.295196 seconds, bootstrap likelihood -646.194664, best rearrangement setting 10
+Bootstrap[54]: Time 0.410794 seconds, bootstrap likelihood -665.065641, best rearrangement setting 7
+Bootstrap[55]: Time 0.373216 seconds, bootstrap likelihood -645.879306, best rearrangement setting 8
+Bootstrap[56]: Time 0.348439 seconds, bootstrap likelihood -616.687312, best rearrangement setting 5
+Bootstrap[57]: Time 0.402002 seconds, bootstrap likelihood -673.255903, best rearrangement setting 12
+Bootstrap[58]: Time 0.334202 seconds, bootstrap likelihood -662.372452, best rearrangement setting 15
+Bootstrap[59]: Time 0.309690 seconds, bootstrap likelihood -655.292730, best rearrangement setting 6
+Bootstrap[60]: Time 0.341854 seconds, bootstrap likelihood -635.555921, best rearrangement setting 9
+Bootstrap[61]: Time 0.361030 seconds, bootstrap likelihood -660.033024, best rearrangement setting 9
+Bootstrap[62]: Time 0.151786 seconds, bootstrap likelihood -668.999398, best rearrangement setting 10
+Bootstrap[63]: Time 0.303459 seconds, bootstrap likelihood -659.611198, best rearrangement setting 12
+Bootstrap[64]: Time 0.461450 seconds, bootstrap likelihood -640.245797, best rearrangement setting 11
+Bootstrap[65]: Time 0.356260 seconds, bootstrap likelihood -648.542765, best rearrangement setting 8
+Bootstrap[66]: Time 0.313251 seconds, bootstrap likelihood -672.926810, best rearrangement setting 13
+Bootstrap[67]: Time 0.332616 seconds, bootstrap likelihood -650.357894, best rearrangement setting 15
+Bootstrap[68]: Time 0.423922 seconds, bootstrap likelihood -631.828812, best rearrangement setting 10
+Bootstrap[69]: Time 0.479924 seconds, bootstrap likelihood -664.661503, best rearrangement setting 13
+Bootstrap[70]: Time 0.327287 seconds, bootstrap likelihood -668.366326, best rearrangement setting 11
+Bootstrap[71]: Time 0.319527 seconds, bootstrap likelihood -630.219200, best rearrangement setting 11
+Bootstrap[72]: Time 0.372268 seconds, bootstrap likelihood -663.013081, best rearrangement setting 13
+Bootstrap[73]: Time 0.314657 seconds, bootstrap likelihood -664.925052, best rearrangement setting 5
+Bootstrap[74]: Time 0.386382 seconds, bootstrap likelihood -636.965789, best rearrangement setting 6
+Bootstrap[75]: Time 0.338415 seconds, bootstrap likelihood -679.982137, best rearrangement setting 11
+Bootstrap[76]: Time 0.298755 seconds, bootstrap likelihood -671.145789, best rearrangement setting 6
+Bootstrap[77]: Time 0.343106 seconds, bootstrap likelihood -662.053218, best rearrangement setting 8
+Bootstrap[78]: Time 0.308841 seconds, bootstrap likelihood -661.314539, best rearrangement setting 13
+Bootstrap[79]: Time 0.381117 seconds, bootstrap likelihood -625.983089, best rearrangement setting 13
+Bootstrap[80]: Time 0.360606 seconds, bootstrap likelihood -645.856308, best rearrangement setting 9
+Bootstrap[81]: Time 0.382044 seconds, bootstrap likelihood -647.050164, best rearrangement setting 10
+Bootstrap[82]: Time 0.370449 seconds, bootstrap likelihood -650.695916, best rearrangement setting 7
+Bootstrap[83]: Time 0.366033 seconds, bootstrap likelihood -655.625928, best rearrangement setting 6
+Bootstrap[84]: Time 0.316151 seconds, bootstrap likelihood -647.909060, best rearrangement setting 15
+Bootstrap[85]: Time 0.399896 seconds, bootstrap likelihood -650.380903, best rearrangement setting 10
+Bootstrap[86]: Time 0.381298 seconds, bootstrap likelihood -654.082581, best rearrangement setting 9
+Bootstrap[87]: Time 0.363803 seconds, bootstrap likelihood -646.078313, best rearrangement setting 5
+Bootstrap[88]: Time 0.478237 seconds, bootstrap likelihood -665.754340, best rearrangement setting 12
+Bootstrap[89]: Time 0.379252 seconds, bootstrap likelihood -635.493670, best rearrangement setting 6
+Bootstrap[90]: Time 0.363076 seconds, bootstrap likelihood -652.521012, best rearrangement setting 13
+Bootstrap[91]: Time 0.388625 seconds, bootstrap likelihood -621.737354, best rearrangement setting 8
+Bootstrap[92]: Time 0.353239 seconds, bootstrap likelihood -662.989634, best rearrangement setting 7
+Bootstrap[93]: Time 0.433144 seconds, bootstrap likelihood -639.017427, best rearrangement setting 11
+Bootstrap[94]: Time 0.405448 seconds, bootstrap likelihood -677.758003, best rearrangement setting 15
+Bootstrap[95]: Time 0.385930 seconds, bootstrap likelihood -671.239727, best rearrangement setting 15
+Bootstrap[96]: Time 0.328792 seconds, bootstrap likelihood -661.221505, best rearrangement setting 5
+Bootstrap[97]: Time 0.464099 seconds, bootstrap likelihood -646.682177, best rearrangement setting 14
+Bootstrap[98]: Time 0.337365 seconds, bootstrap likelihood -682.844613, best rearrangement setting 7
+Bootstrap[99]: Time 0.349685 seconds, bootstrap likelihood -677.286084, best rearrangement setting 10
+
+
+Overall Time for 100 Rapid Bootstraps 36.803236 seconds
+Average Time per Rapid Bootstrap 0.368032 seconds
+
+Starting ML Search ...
+
+
+WARNING the alpha parameter with a value of 12.239429 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.202305 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.215237 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 15.278024 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 16.810194 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.182627 estimated by RAxML for partition number 10 with the name "Subset11"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 20.777505 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 26.184366 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 32.606570 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 40.009785 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 35.689169 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 39.237239 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 11.648767 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 32.548438 estimated by RAxML for partition number 10 with the name "Subset11"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 11.227028 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 44.916664 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 56.051545 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 75.041150 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 92.606402 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 82.801124 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 90.996621 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 19.475436 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 74.912661 estimated by RAxML for partition number 10 with the name "Subset11"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 12.003514 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 99.781033 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 122.007528 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 163.764742 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 204.804292 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 182.346277 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 201.264518 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 29.933871 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 163.484507 estimated by RAxML for partition number 10 with the name "Subset11"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 12.358471 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 216.583809 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 261.903155 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 368.603210 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 463.845952 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 412.176187 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 455.855835 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 33.937588 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 367.979162 estimated by RAxML for partition number 10 with the name "Subset11"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Fast ML optimization finished
+
+Fast ML search Time: 23.992862 seconds
+
+
+WARNING the alpha parameter with a value of 10.026286 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 10.315063 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.393578 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.117377 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 16.063476 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.074386 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.561880 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 18.876916 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 21.375745 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.513473 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 32.972984 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 39.756105 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 37.787134 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 39.580565 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 33.431484 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 40.315284 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 46.786851 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 16.364025 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 75.802128 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 91.994800 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 87.933129 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 91.505485 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 76.960034 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 88.995485 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 104.879405 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 13.551310 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 165.440475 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 203.369799 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 194.484631 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 202.163222 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 168.230305 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 191.622915 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 229.426758 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 12.079273 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 372.399198 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 460.516270 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 440.495827 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 457.661239 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 378.962844 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Slow ML Search 0 Likelihood: -666.335187
+Slow ML Search 1 Likelihood: -666.335187
+Slow ML Search 2 Likelihood: -666.335203
+Slow ML Search 3 Likelihood: -666.335203
+Slow ML Search 4 Likelihood: -666.335203
+Slow ML Search 5 Likelihood: -666.572812
+Slow ML Search 6 Likelihood: -666.465644
+Slow ML Search 7 Likelihood: -666.465644
+Slow ML Search 8 Likelihood: -666.465644
+Slow ML Search 9 Likelihood: -666.465644
+Slow ML optimization finished
+
+Slow ML search Time: 13.961095 seconds
+
+WARNING the alpha parameter with a value of 10.026286 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 10.315063 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.393578 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.117377 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 16.063476 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.074386 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 14.561880 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 18.876916 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 21.375745 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 17.513473 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 32.972984 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 39.756105 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 37.787134 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 39.580565 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 33.431484 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 40.315284 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 46.786851 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 16.364025 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 75.802128 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 91.994800 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 87.933129 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 91.505485 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 76.960034 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 88.995485 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 104.879405 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 13.551310 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 165.440475 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 203.369799 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 194.484631 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 202.163222 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 168.230305 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 191.622915 estimated by RAxML for partition number 1 with the name "Subset2"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 229.426758 estimated by RAxML for partition number 2 with the name "Subset3"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 12.079273 estimated by RAxML for partition number 3 with the name "Subset4"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 372.399198 estimated by RAxML for partition number 4 with the name "Subset5"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 460.516270 estimated by RAxML for partition number 5 with the name "Subset6"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 440.495827 estimated by RAxML for partition number 6 with the name "Subset7"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 457.661239 estimated by RAxML for partition number 7 with the name "Subset8"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 378.962844 estimated by RAxML for partition number 8 with the name "Subset9"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Thorough ML search Time: 1.262627 seconds
+
+Final ML Optimization Likelihood: -666.335187
+
+Model Information:
+
+Model Parameters of Partition 0, Name: Subset1, Type of Data: Multi-State
+alpha: 4.891306
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+
+freq pi(0): 0.500000
+freq pi(1): 0.500000
+
+Model Parameters of Partition 1, Name: Subset2, Type of Data: Multi-State
+alpha: 191.622915
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 2, Name: Subset3, Type of Data: Multi-State
+alpha: 229.426758
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 3, Name: Subset4, Type of Data: Multi-State
+alpha: 12.079273
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 4, Name: Subset5, Type of Data: Multi-State
+alpha: 372.399198
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 5, Name: Subset6, Type of Data: Multi-State
+alpha: 460.516270
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 6, Name: Subset7, Type of Data: Multi-State
+alpha: 440.495827
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+
+freq pi(0): 0.500000
+freq pi(1): 0.500000
+
+Model Parameters of Partition 7, Name: Subset8, Type of Data: Multi-State
+alpha: 457.661239
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 8, Name: Subset9, Type of Data: Multi-State
+alpha: 378.962844
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+
+freq pi(0): 0.500000
+freq pi(1): 0.500000
+
+Model Parameters of Partition 9, Name: Subset10, Type of Data: Multi-State
+alpha: 0.020000
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+rate 0 <-> 2: 1.000000
+rate 1 <-> 2: 1.000000
+
+freq pi(0): 0.333333
+freq pi(1): 0.333333
+freq pi(2): 0.333333
+
+Model Parameters of Partition 10, Name: Subset11, Type of Data: Multi-State
+alpha: 4.107876
+Tree-Length: 3.706147
+rate 0 <-> 1: 1.000000
+
+freq pi(0): 0.500000
+freq pi(1): 0.500000
+
+
+ML search took 39.311835 secs or 0.010920 hours
+
+Combined Bootstrap and ML search took 76.116396 secs or 0.021143 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /work/02185/amwright/rax_p/12/RAxML_bestTree.Liu_etal_2009a
+
+
+
+Found 1 tree in File /work/02185/amwright/rax_p/12/RAxML_bestTree.Liu_etal_2009a
+
+Program execution info written to /work/02185/amwright/rax_p/12/RAxML_info.Liu_etal_2009a
+All 100 bootstrapped trees written to: /work/02185/amwright/rax_p/12/RAxML_bootstrap.Liu_etal_2009a
+
+Best-scoring ML tree written to: /work/02185/amwright/rax_p/12/RAxML_bestTree.Liu_etal_2009a
+
+Best-scoring ML tree with support values written to: /work/02185/amwright/rax_p/12/RAxML_bipartitions.Liu_etal_2009a
+
+Best-scoring ML tree with support values as branch labels written to: /work/02185/amwright/rax_p/12/RAxML_bipartitionsBranchLabels.Liu_etal_2009a
+
+Overall execution time for full ML analysis: 76.155037 secs or 0.021154 hours or 0.000881 days
+

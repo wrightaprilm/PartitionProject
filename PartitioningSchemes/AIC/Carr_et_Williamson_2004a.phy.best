@@ -1,0 +1,49 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 29
+Scheme lnL        : -133.88314
+Scheme AIC        : 325.76628
+Number of params  : 29
+Number of sites   : 84
+Number of subsets : 12
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA+ASC | 0                              | 28                             | ./analysis/phylofiles/b7d35fef31b3f49790a9a20a57dac5d9.phy
+2      | MULTIGAMMA+ASC | 0                              | 18                             | ./analysis/phylofiles/6c3a95bf4821cfbb3ffe2f27c80c3587.phy
+3      | MULTIGAMMA+ASC | 0                              | 11                             | ./analysis/phylofiles/d0a7bcc1d125d4f29dd6679ed97c2b30.phy
+4      | MULTIGAMMA+ASC | 0                              | 4                              | ./analysis/phylofiles/5bc198556767d08a1240c7c186b67bff.phy
+5      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/93bcd4cffd382f598c2db8e47e788c33.phy
+6      | MULTIGAMMA+ASC | 0                              | 7                              | ./analysis/phylofiles/331b75f20fc9689f8eb88405db899e40.phy
+7      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/c7e8a93fb9dd1f5fc8b7796c2c01e3b8.phy
+8      | MULTIGAMMA+ASC | 0                              | 4                              | ./analysis/phylofiles/f639b6c7229a73517462be81e48e3a77.phy
+9      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/9976304372487df5406153365e298da3.phy
+10     | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/c9180f4fbdf89f6d04828dc5a6133c3a.phy
+11     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/53c8f3604246f4de6c744cb209f1a2da.phy
+12     | MULTIGAMMA+ASC | 0                              | 3                              | ./analysis/phylofiles/bb94a477fcbd67ea096120e5bef28263.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_29 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 2, 3, 4, 5, 23, 25, 27, 28, 31, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 54, 67, 72, 79
+MK, Subset2 = 6, 7, 9, 10, 11, 12, 26, 55, 59, 60, 61, 64, 65, 66, 69, 73, 74, 84
+MK, Subset3 = 8, 13, 19, 20, 21, 35, 58, 62, 63, 68, 75
+MK, Subset4 = 14, 17, 22, 33
+MK, Subset5 = 15, 18
+MK, Subset6 = 16, 29, 30, 37, 38, 53, 82
+MK, Subset7 = 24
+MK, Subset8 = 32, 56, 77, 83
+MK, Subset9 = 34, 36
+MK, Subset10 = 57, 70, 81
+MK, Subset11 = 71
+MK, Subset12 = 76, 78, 80

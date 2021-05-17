@@ -1,0 +1,41 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 10
+Scheme lnL        : -68.680673
+Scheme AIC        : 193.361346
+Number of params  : 28
+Number of sites   : 17
+Number of subsets : 8
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/efaa1d5e9f8a0be472f6ab50c38eb97a.phy
+2      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/8c90e575c0b60c98a91b5ed3dd4eaffd.phy
+3      | MULTIGAMMA+ASC | 0                              | 4                              | ./analysis/phylofiles/3d106ab67e5c3c0bbcca48ff62016393.phy
+4      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/7b5e88c6993ddcb39d0728168c5d4c91.phy
+5      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/a2453202b55ffb8b37c313876b3a83b4.phy
+6      | MULTIGAMMA+ASC | 0                              | 3                              | ./analysis/phylofiles/e06205c810836028b723561cbee95088.phy
+7      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/10bdb1cc2c12efdf9ecd44165630b605.phy
+8      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/fdd2975efd6357ca0d5c6cb59c1f275d.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_10 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1
+MK, Subset2 = 2
+MK, Subset3 = 3, 8, 10, 11
+MK, Subset4 = 4, 14, 15
+MK, Subset5 = 5, 7
+MK, Subset6 = 6, 12, 13
+MK, Subset7 = 9
+MK, Subset8 = 16, 17

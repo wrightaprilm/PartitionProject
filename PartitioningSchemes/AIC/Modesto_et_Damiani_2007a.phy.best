@@ -1,0 +1,41 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 10
+Scheme lnL        : -242.723055
+Scheme AIC        : 553.44611
+Number of params  : 34
+Number of sites   : 43
+Number of subsets : 8
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA+ASC | 0                              | 12                             | ./analysis/phylofiles/c169dc69adc2a3b47aaf7a397a2f93af.phy
+2      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/c67b3ba4adcb60889f7475b9d7a3763f.phy
+3      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/de7c51883c9e828794782e444b1dd72a.phy
+4      | MULTIGAMMA | 0                              | 5                              | ./analysis/phylofiles/8aafe95b349cb5669a60d432a9a69a75.phy
+5      | MULTIGAMMA+ASC | 0                              | 16                             | ./analysis/phylofiles/aa40d81e02c3fd633b0f44b23c4014ed.phy
+6      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/ed5c3791df11d2a225c2e73fca88a660.phy
+7      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/6112684f4e58860f65c4b9a8a3f58b5c.phy
+8      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/b60331d7079d08014a1b001a91858666.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_10 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 4, 7, 9, 10, 14, 15, 20, 23, 36, 38, 40
+MK, Subset2 = 2, 3
+MK, Subset3 = 5, 33
+MK, Subset4 = 6, 8, 11, 21, 25
+MK, Subset5 = 12, 13, 22, 24, 26, 28, 30, 31, 32, 34, 35, 37, 39, 41, 42, 43
+MK, Subset6 = 16
+MK, Subset7 = 17, 18
+MK, Subset8 = 19, 27, 29

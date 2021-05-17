@@ -1,0 +1,43 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 12
+Scheme lnL        : -121.409803
+Scheme AIC        : 306.819606
+Number of params  : 32
+Number of sites   : 23
+Number of subsets : 9
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA | 0                              | 5                              | ./analysis/phylofiles/c8498320b31d4ce1198640d1f6c6351b.phy
+2      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/8c90e575c0b60c98a91b5ed3dd4eaffd.phy
+3      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/eeea5acefa5552cdc9068ed93906d0de.phy
+4      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/5905217e4395bb6ad449dbc4a147fd4d.phy
+5      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/d88276b9165d8e4783b4e9c9145a9386.phy
+6      | MULTIGAMMA+ASC | 0                              | 7                              | ./analysis/phylofiles/5774ab266d742ad9a7d73c87f2ca8a21.phy
+7      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/a1ece6b4f0067706bd9b3c7200e2c2c9.phy
+8      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/d55e10201f3c4025567c0a9a2b998364.phy
+9      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/eeddd19fa378f8b746ecd96879149a3f.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_12 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 6, 7, 10, 15
+MK, Subset2 = 2
+MK, Subset3 = 3, 14, 23
+MK, Subset4 = 4, 8, 16
+MK, Subset5 = 5
+MK, Subset6 = 9, 13, 17, 18, 20, 21, 22
+MK, Subset7 = 11
+MK, Subset8 = 12
+MK, Subset9 = 19

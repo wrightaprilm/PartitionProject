@@ -1,0 +1,1 @@
+for file in *; do echo $file; ~/standard-RAxML-8.1.16/raxmlHPC  -fa -s $file -m MULTIGAMMA -K MK -q $file.phy.best.q -n $file -x 1234 -p 12354 -# 100 --asc-corr=lewis; done

@@ -1,0 +1,41 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 11
+Scheme lnL        : -475.08984
+Scheme AIC        : 1060.17968
+Number of params  : 55
+Number of sites   : 36
+Number of subsets : 8
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/c0d722c1dc6e1be8f53d168a15be8cb0.phy
+2      | MULTIGAMMA | 0                              | 5                              | ./analysis/phylofiles/df181e3bada531aa55ee0cb05dbbbe0a.phy
+3      | MULTIGAMMA | 0                              | 6                              | ./analysis/phylofiles/16f3a241935650ee8e48cea1fa849323.phy
+4      | MULTIGAMMA | 0                              | 14                             | ./analysis/phylofiles/d89dd2ae8d22c6b83a6fd65755f2f1be.phy
+5      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/0144f441ff2fae7c573c033e8f3c1b4e.phy
+6      | MULTIGAMMA | 0                              | 4                              | ./analysis/phylofiles/fbf40fe46ba05d05a0019542f631a974.phy
+7      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/510408a27b602502789440a4f011dd0a.phy
+8      | MULTIGAMMA+ASC | 0                              | 3                              | ./analysis/phylofiles/bed1ffb9a846e4b10e0937e9eec4af5e.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_11 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 15
+MK, Subset2 = 2, 5, 14, 21, 27
+MK, Subset3 = 3, 8, 9, 10, 12, 26
+MK, Subset4 = 4, 6, 7, 11, 16, 18, 19, 22, 24, 29, 31, 32, 33, 34
+MK, Subset5 = 13
+MK, Subset6 = 17, 23, 25, 30
+MK, Subset7 = 20
+MK, Subset8 = 28, 35, 36

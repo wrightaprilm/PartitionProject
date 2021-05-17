@@ -1,0 +1,41 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 11
+Scheme lnL        : -334.21897
+Scheme AIC        : 752.43794
+Number of params  : 42
+Number of sites   : 36
+Number of subsets : 8
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA | 0                              | 17                             | ./analysis/phylofiles/b3bedb96206303ec5831e5d8f0fe37fe.phy
+2      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/61f1eb5d2db18ad2e3bf100c879288ee.phy
+3      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/6ebba7a416f9cf176574b74a559071d5.phy
+4      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/0144f441ff2fae7c573c033e8f3c1b4e.phy
+5      | MULTIGAMMA+ASC | 0                              | 2                              | ./analysis/phylofiles/9e1e3b24598e636466f48f5b78796ba6.phy
+6      | MULTIGAMMA+ASC | 0                              | 6                              | ./analysis/phylofiles/4f1020d7e0819854cacd365f3fe336e3.phy
+7      | MULTIGAMMA | 0                              | 4                              | ./analysis/phylofiles/d1d04e46577d77d7bc063b04acb2093b.phy
+8      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/1b71644d0c42e5af5c865af0cb36d5f2.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_11 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 3, 5, 6, 8, 9, 10, 11, 12, 14, 15, 16, 17, 21, 22, 24, 31
+MK, Subset2 = 2, 7, 20
+MK, Subset3 = 4, 18
+MK, Subset4 = 13
+MK, Subset5 = 19, 23
+MK, Subset6 = 25, 28, 29, 30, 33, 34
+MK, Subset7 = 26, 27, 35, 36
+MK, Subset8 = 32

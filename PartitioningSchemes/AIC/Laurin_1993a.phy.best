@@ -1,0 +1,69 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 46
+Scheme lnL        : -540.396161
+Scheme AIC        : 1166.792322
+Number of params  : 43
+Number of sites   : 121
+Number of subsets : 22
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA+ASC | 0                              | 68                             | ./analysis/phylofiles/edbe4a92fafef56ecd8635688b7e459c.phy
+2      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/5ce310c4785328cd8475e7343365c293.phy
+3      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/7bcb4deb78ad3727d090fa83f926eec5.phy
+4      | MULTIGAMMA | 0                              | 6                              | ./analysis/phylofiles/43aecf94119d5251b12d9a86be755ead.phy
+5      | MULTIGAMMA | 0                              | 8                              | ./analysis/phylofiles/e3a8e78d03ada8c18b1d874c13222c46.phy
+6      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/5d7efb9d4838314b57d2f9df73bbc105.phy
+7      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/878cd913272ed410678a84469f037c40.phy
+8      | MULTIGAMMA | 0                              | 4                              | ./analysis/phylofiles/0e53ec7924394243d8e92f63c8e98003.phy
+9      | MULTIGAMMA+ASC | 0                              | 5                              | ./analysis/phylofiles/6954f3467ac4b37a9310524e0fac9e61.phy
+10     | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/aa7cdfe7e19da9501c6512f7cf3ca212.phy
+11     | MULTIGAMMA | 0                              | 5                              | ./analysis/phylofiles/530dfed3d1ccd58382f70d7be0b7fd27.phy
+12     | MULTIGAMMA+ASC | 0                              | 2                              | ./analysis/phylofiles/254e782c7c3c2005751b2c8400382431.phy
+13     | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/1512145aa9f6395e5041d326d5e29538.phy
+14     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/53c7566b42bef1b0d75319956c51192d.phy
+15     | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/9800aca188984025d16f57465eb7899c.phy
+16     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/16027a365a44e04bb1a71715ca7b06d9.phy
+17     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/53c8f3604246f4de6c744cb209f1a2da.phy
+18     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/799565e2810f60dcccf8b27ac7b4d574.phy
+19     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/ad03375574a6510d8730e476714fb325.phy
+20     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/b2af0c797e61318df456bf47056e6503.phy
+21     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/71336182657086866ca9d4cf8acc7abc.phy
+22     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/7dfca9ecfb6ea06407d21c73748ef6f1.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_46 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 3, 6, 7, 12, 15, 17, 22, 23, 24, 27, 31, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46, 47, 49, 51, 52, 53, 55, 65, 70, 72, 73, 74, 76, 78, 79, 80, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 96, 97, 99, 101, 102, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 120, 121
+MK, Subset2 = 2, 5, 98
+MK, Subset3 = 4
+MK, Subset4 = 8, 10, 14, 41, 64, 69
+MK, Subset5 = 9, 11, 16, 20, 25, 56, 57, 100
+MK, Subset6 = 13, 21
+MK, Subset7 = 18, 54, 68
+MK, Subset8 = 19, 34, 58, 60
+MK, Subset9 = 26, 62, 95, 118, 119
+MK, Subset10 = 28, 66
+MK, Subset11 = 29, 33, 61, 63, 67
+MK, Subset12 = 30, 77
+MK, Subset13 = 32, 50
+MK, Subset14 = 35
+MK, Subset15 = 48, 81
+MK, Subset16 = 59
+MK, Subset17 = 71
+MK, Subset18 = 75
+MK, Subset19 = 82
+MK, Subset20 = 83
+MK, Subset21 = 84
+MK, Subset22 = 103

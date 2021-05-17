@@ -1,0 +1,103 @@
+
+
+This is RAxML version 8.1.16 released by Alexandros Stamatakis on January 19 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 65 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 15.85%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 6 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 100 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 14
+Name: Subset1
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 1
+Alignment Patterns: 6
+Name: Subset2
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 2
+Alignment Patterns: 14
+Name: Subset3
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 3
+Alignment Patterns: 15
+Name: Subset4
+DataType: Multi-State with 3 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 4
+Alignment Patterns: 8
+Name: Subset5
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+Partition: 5
+Alignment Patterns: 8
+Name: Subset6
+DataType: Multi-State with 2 distinct states in use (maximum 32)
+Substitution Matrix: MK model
+
+
+
+
+RAxML was called as follows:
+
+/home1/02185/amwright/standard-RAxML-8.1.16/raxmlHPC -fa -s Abella_etal_2012a -m MULTIGAMMA -K MK -q Abella_etal_2012a.best.q -n Abella_etal_2012a -x 1234 -p 12354 -# 100 --asc-corr=lewis 
+
+
+
+Time for BS model parameter optimization 0.046040
+Bootstrap[0]: Time 0.773693 seconds, bootstrap likelihood -591.094092, best rearrangement setting 10
+Bootstrap[1]: Time 0.195412 seconds, bootstrap likelihood -584.717729, best rearrangement setting 15
+Bootstrap[2]: Time 0.235334 seconds, bootstrap likelihood -599.493406, best rearrangement setting 15
+Bootstrap[3]: Time 0.254800 seconds, bootstrap likelihood -559.018006, best rearrangement setting 12
+Bootstrap[4]: Time 0.264142 seconds, bootstrap likelihood -581.287848, best rearrangement setting 9
+Bootstrap[5]: Time 0.213126 seconds, bootstrap likelihood -568.835081, best rearrangement setting 12
+Bootstrap[6]: Time 0.266948 seconds, bootstrap likelihood -607.306352, best rearrangement setting 14
+Bootstrap[7]: Time 0.109617 seconds, bootstrap likelihood -590.998156, best rearrangement setting 10
+Bootstrap[8]: Time 0.205710 seconds, bootstrap likelihood -571.173883, best rearrangement setting 13
+Bootstrap[9]: Time 0.219032 seconds, bootstrap likelihood -575.692124, best rearrangement setting 14
+Bootstrap[10]: Time 0.259062 seconds, bootstrap likelihood -571.869728, best rearrangement setting 14
+Bootstrap[11]: Time 0.218521 seconds, bootstrap likelihood -605.220892, best rearrangement setting 5
+Bootstrap[12]: Time 0.238937 seconds, bootstrap likelihood -555.316217, best rearrangement setting 9
+Bootstrap[13]: Time 0.282766 seconds, bootstrap likelihood -594.489238, best rearrangement setting 10
+Bootstrap[14]: Time 0.212091 seconds, bootstrap likelihood -617.526086, best rearrangement setting 13
+Bootstrap[15]: Time 0.222854 seconds, bootstrap likelihood -575.356067, best rearrangement setting 6

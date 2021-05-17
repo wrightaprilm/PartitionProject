@@ -1,0 +1,45 @@
+Settings used
+
+alignment         : ./file.phy
+branchlengths     : linked
+models            : MULTIGAMMA+ASC, MULTIGAMMA
+model_selection   : aic
+search            : kmeans
+
+
+Best partitioning scheme
+
+Scheme Name       : 15
+Scheme lnL        : -271.678031
+Scheme AIC        : 645.356062
+Number of params  : 51
+Number of sites   : 26
+Number of subsets : 10
+
+Subset | Best Model | Subset Partitions              | Subset Sites                   | Alignment                               
+1      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/71e7b426d44d5f988179be5bb76f8eaf.phy
+2      | MULTIGAMMA+ASC | 0                              | 4                              | ./analysis/phylofiles/32eaccf7adeb5276e163164fc3f3f679.phy
+3      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/2d6fd712e51ac571ffc66e851f40d364.phy
+4      | MULTIGAMMA | 0                              | 4                              | ./analysis/phylofiles/d79fd5af989f0ae6a0caddcfae1959fb.phy
+5      | MULTIGAMMA | 0                              | 3                              | ./analysis/phylofiles/267ae9158c204029694282b725b28e05.phy
+6      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/10bdb1cc2c12efdf9ecd44165630b605.phy
+7      | MULTIGAMMA | 0                              | 5                              | ./analysis/phylofiles/916e9c21bd077bf9605fbfa67f05b63f.phy
+8      | MULTIGAMMA | 0                              | 2                              | ./analysis/phylofiles/0ed805ee5400a814b733a574bac47b70.phy
+9      | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/5e55a6cdf4454856e7bc0f2c6747b79c.phy
+10     | MULTIGAMMA | 0                              | 1                              | ./analysis/phylofiles/c4ad51056197522366fd8523d9f9e4c5.phy
+
+
+Scheme Description in PartitionFinder format
+Scheme_15 = ;
+
+RaxML-style partition definitions
+MK, Subset1 = 1, 2
+MK, Subset2 = 3, 4, 16, 25
+MK, Subset3 = 5, 7, 13
+MK, Subset4 = 6, 12, 18, 26
+MK, Subset5 = 8, 10, 19
+MK, Subset6 = 9
+MK, Subset7 = 11, 14, 15, 17, 24
+MK, Subset8 = 20, 21
+MK, Subset9 = 22
+MK, Subset10 = 23
