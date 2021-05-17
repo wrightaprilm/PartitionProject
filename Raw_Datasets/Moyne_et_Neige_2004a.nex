@@ -1,0 +1,27 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=16;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Rarenodia       001201000000010?
+Erycites        0111010011010001
+Abbasites       0100010011011011
+Riccardiceras   0200010011010111
+Docidoceras     1200010011010111
+Mollistephanus  0100010001010111
+Hammatoceras    1011010000000100
+Euhoploceras    1021100100000100
+Eudmetoceras    1022101101010100
+Csernyeiceras   2022011111110100
+Praestrigites   2021001110111100
+Bradfordia      2000001110101101
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

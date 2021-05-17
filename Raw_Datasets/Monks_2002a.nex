@@ -1,0 +1,43 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=27 NCHAR=30;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Hamites_sp_nov              000000000000000200000000000000
+Hamitella_annulata          201010001000000200000010010000
+Hamites_attenuatus          102010000010000200000010010000
+Hamites_compressus          001010003000000200000010010011
+Hamites_dixoni              000000000000000200000000000000
+Hamites_funatus             102010012010011200000011011001
+Hamites_gibbosus            002110000000000200000010010000
+Hamites_hybridus            000000000000000200000000000000
+Hamites_maximus             102010001010000200000010010000
+Hamites_nokonsis            001010002010002201000011011001
+Hamites_parkinsoni          201010002010001200100011011001
+Hamites_praegibbosus        000000000000000100000010110000
+Hamites_pseudattenuatus     0000000000000002000000??????00
+Hamites_ptychoceratoides    102010012010021210000011011001
+Hamites_tenuicostatus       102010000000001200000010010000
+Hamites_tenuis              002210000001000200000010010000
+Hamites_virgulatus          001010002010001200000011011001
+Hamitoides_studeri          00101010100010020000??????????
+Hemiptychoceras_gaultinum   ?02010022000021210000011011101
+Lytohamites_similis         101010002011001200000011011000
+Psilohemites_bouchardianus  ?020200021?2???200000111110001
+P_corrugatus                301010001000000200000011??1?0?
+Scaphemites_passendorferi   011011100000100200000011010000
+Eoscaphites                 001011201000100200001011010000
+Proturrilitoides            300000002010001200100011011000
+Lechites                    002020002010002201010011011000
+Protanisoceras              000000002000000000000000010000
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 2 6 9-11 13 15 17-30, ord: 1 3-5 7-8 12 14 16;
+END;

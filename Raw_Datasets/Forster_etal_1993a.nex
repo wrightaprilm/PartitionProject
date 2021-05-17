@@ -1,0 +1,21 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=6 NCHAR=9;
+	FORMAT SYMBOLS= " 0 1" MISSING=? GAP=- ;
+MATRIX
+
+Centrosaurinae              0?0011000
+Other_chasmosaurines        000000000
+Pentaceratops_sternbergii   000000111
+Chasmosaurus_russelli       111111111
+Chasmosaurus_belli          111111111
+Chasmosaurus_mariscalensis  111?00111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

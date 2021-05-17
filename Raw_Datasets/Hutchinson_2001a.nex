@@ -1,0 +1,63 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=47 NCHAR=21;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+MATRIX
+
+Lepidosauromorpha      000000000000000000000
+Rhynchosauria          000000000000000000000
+Trilophosaurus         00000000?000000000000
+Proterosuchidae        000?0000?000000000000
+Erythrosuchidae        0?011000?000000000010
+Doswellia              11?00000?000???0?0010
+Euparkeria             01?11000?000???000010
+Proterochampsidae      11111000?000101000010
+Ornithosuchidae        11111020?000?01000010
+Parasuchia             011110(01)00000101000010
+Aetosauria             11111010?000101000010
+Rauisuchidae           111200(01)00000?0?000?10
+Poposauridae           (12)11200000000?0?000?11
+basal_Crocodylomorpha  11111000000010?000?10
+basal_Crocodyliformes  11111000?000?0?000010
+Crocodylia             111110000000101000010
+Pterosauromorpha       211200400010?01000022
+Lagerpeton             111111000000101000020
+Lagosuchus             111111100000?0?000020
+Lewisuchus             111111100000101000020
+Ornithischia           11112230?000101000020
+Sauropodomorpha        11112220?000101000020
+Eoraptor               11111110?00010?000020
+Herrerasauridae        111111100000101100020
+Coelophysoidea         111111200000101100021
+Ceratosauria           11111120?000101100021
+basal_Tetanurae_1      11111230??00101100021
+basal_Tetanurae_2      211112301100101100121
+Carnosauria            211112301100101100121
+basal_Coelurosauria    2111123011001?1100121
+Tyrannosauridae        2111123011001?1100121
+Ornithomimosauria      211202301100111100121
+Oviraptorosauria       211202401100111000121
+Therizinosauroidea     21111?40?0001?1100121
+Alvarezsauridae        21(12)20(02)(45)0?0001?1000121
+Troodontidae           21220351?000111000121
+Deinonychosauria       2112(01)341?000111000121
+Unenlagia              21120?4??000???000121
+Archaeopteryx          21120341?0?????00012?
+Rahonavis              21220350?0101?1000122
+Confuciusornithidae    21220351?0?????0??102
+Enantiornithes         2122035120111?1011122
+Patagopteryx           212204522011111011122
+Hesperornithiformes    2122045220111?1011200
+Ichthyornithiformes    2122045220?????0?122?
+Paleognathae           2122045220111?1011222
+Neognathae             2122045220111?1011222
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 2-18 21, ord: 1 19-20;
+END;

@@ -1,0 +1,25 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=17;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+outgroup         00000000000000000
+Iguanodon        01000001000001101
+Ouranosaurus     11000001000001?00
+Probactrosaurus  0111?001000001?0?
+Bactrosaurus     0111?001000001010
+Telmatosaurus    02111001000011010
+Hadrosaurinae    12111111110110011
+Lambeosaurinae   12111112111110010
+Fontllonga       ?2111011100010010
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1 3-7 9-17, ord: 2 8;
+END;

@@ -1,0 +1,26 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=12;
+	FORMAT SYMBOLS= " 0 1" MISSING=? GAP=- ;
+MATRIX
+
+Agnostus      101000000100
+Olenoides     111001000110
+N_bertiensis  0?0100111000
+N_compacta    00000(01)111000
+N_spinifer    0?0001011000
+N_spinosa     000001011000
+Misszhouia    000000011000
+Buenaspis     0?0010010011
+Liwia         0?00100100?0
+Soomaspis     0?0110010011
+Tarricoia     0?01100100?1
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

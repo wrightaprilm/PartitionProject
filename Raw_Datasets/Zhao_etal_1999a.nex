@@ -1,0 +1,22 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=25;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Ornithopod          0000?0000000000000000(01)000
+Pachycephalosauria  0000?000(01)0000000000000000
+Psittacosaurus      0111011111111110101000001
+Chaoyangsaurus      ?111011?0?111001??1011000
+Archaeoceratops     1001111?01011111??11111??
+Leptoceratops       1001101101011111211111111
+Ceratopsidae        1001100111011111211111111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

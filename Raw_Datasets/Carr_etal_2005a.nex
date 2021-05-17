@@ -1,0 +1,35 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=20 NCHAR=31;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Eoraptor          00000000000??000000000?0000000?
+Herrerasaurus     0001000000000000011000??00?0000
+Coelophysis       0000000000?00000000000??00?0100
+Allosaurus        22(12)001220000000000000000(01)010100
+Sinraptor         11100122001012?1000112000000100
+Yangchuanosaurus  11100002000??????00111??00??10?
+Acrocanthosaurus  111000011000121000011201?0?0100
+Deinonychus       11101000000011100111121100?0100
+Velociraptor      1110100000001??00111221??0??10?
+Erlikosaurus      00000000000??????11000???0??00?
+Saurornithoides   11202000000??????00111???0??00?
+Ornithomimidae    (12)11010000000???00???????0001000
+Appalachiosaurus  1110101110?11210000?2100??111?1
+Dryptosaurus      ????????????????????????0101?1?
+A._libratus       112111(12)2101021100112(12)2111111121
+A._sarcophagus    112111121(01)101210011(12)(12)(12)00?111111
+Daspletosaurus    222111(12)11100(12)1211(01)(01)(12)1(12)1(01)11?1111
+T._rex            2321200121011221100212111111122
+T._bataar         23212001210012?1100211??1111022
+Shanshanosaurus   222?????????????????????011?022
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

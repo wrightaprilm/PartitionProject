@@ -1,0 +1,24 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=14;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Neodiapsida           00000000000000
+Pachypleurosauroidea  000000000?0100
+Corosaurus            01010?10?00001
+Simosaurus            10010000010101
+Cymatosaurus          01110100??1001
+Nothosaurus           11111(01)11121110
+Paranothosaurus       11111?11?21110
+Lariosaurus           11111??1?21110
+Ceresiosaurus         1111??(01)1?21110
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

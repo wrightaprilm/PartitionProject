@@ -1,0 +1,24 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=10;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Eudimorphodon_ranzii             0000000000
+Pterodactylus_kochi              0000000000
+Daitingopterus_rhamphastinus     0011000110
+Germanodactylus_cristatus        1111000110
+Normannognathus_wellnhoferi      0022100011
+Domeykodactylus_ceciliae         1?2?0?0?21
+Lonchognathosaurus_acutirostris  ?12201?111
+Phobetor_parvus                  1121001121
+Dsungaripterus_weii              1122111121
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

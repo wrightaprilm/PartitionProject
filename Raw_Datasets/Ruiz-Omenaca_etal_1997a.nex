@@ -1,0 +1,29 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=3;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Baryonyx_sp._adult          000
+Baryonyx_walkeri            001
+cf._Baryonyx                002
+Baryonyx_sp._juvenile       002
+Baryonychidae_indet.        012
+Spinosauridae               130
+Spinosaurus_sp.             13?
+Spinosaurus_cf._aegypticus  130
+Irritator_challengeri       130
+Angaturama_limai            130
+Siamosaurus_suteethorni     122
+Spinosauridae_indet.        132
+Spinosaurus_aegypticus      132
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1, ord: 2-3;
+END;

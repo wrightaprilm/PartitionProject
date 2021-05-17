@@ -1,0 +1,24 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=23;
+	FORMAT SYMBOLS= " 0 1" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup           00000000000000000000000
+Azhdarcho          0??(01)1??????????111?????
+Quetzalcoatlus_sp  00??10110??0??111101111
+Sinopterus_dongi   101?11010101??00???10?0
+Tap_imperator      111?1111?10???1????????
+Tap_navigans       111?11000001??0????????
+Tap_wellnhoferi    101011111101?0000010000
+Tupuxuara          001111111000111010?1111
+Zhejiangopterus    000?11010010111111011?1
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

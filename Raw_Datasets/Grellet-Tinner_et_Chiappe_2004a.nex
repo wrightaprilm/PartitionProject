@@ -1,0 +1,27 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=11;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Chelonia                    00000000000
+Alligator_mississippiensis  1?000000100
+Hadrosauridae               1?1000?0?00
+Titanosauria                101000?0?00
+Oviraptoridae               1011111011?
+Troodon_formosus            11112110111
+Anser_anser                 11022111111
+Meleagris_gallopavo         11022111111
+Struthio_camelus            11021011111
+Rhea_americana              11021111111
+Dromaius_novaehollandiae    11121111111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-3 5-11, ord: 4;
+END;

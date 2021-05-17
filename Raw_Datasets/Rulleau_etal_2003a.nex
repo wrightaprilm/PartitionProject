@@ -1,0 +1,32 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=17 NCHAR=19;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Protogrammoceras            0001001110101110001
+Hildaites                   0000001100111110001
+Tauromeniceras              0000001010100010011
+Bouleiceras_nitescens       0011111100100000111
+Bouleiceras_arabicum        0011111100100010111
+Nejda_bramkampi             1011111101122010112
+Nejdia_pseudogruneri        1011111101000010112
+Leukadiella_helenica        0100002010111100012
+Leukadiella_ionica          0100002100111100012
+Renziceras_nausikaae        0100001010111100011
+Frechiella_subcarinata      2122111011000110012
+Paroniceras_sternale        2122210111000111010
+Paroniceras_helveticum      2121210111122111010
+O_Oxyparoniceras_bumckmani  2011110111000110011
+O_Oxyparoniceras_telemachi  2022110111000111011
+O_Neoparoniceras_undulosum  102110011100011101?
+Kohaticeras_razai           1111101010100011111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

@@ -1,0 +1,52 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=36 NCHAR=32;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Pachyrisma_grande               00000000000000010000000000000000
+Epidiceras_sinistrum            10000000100010010000000000000000
+Matheronia_salevensis           10000000100011010000000000000000
+Toucasia_carinata               20000000100011010000000000000000
+Diceras_arietinum               10000000010010010000000000000000
+Valletia_auris                  10000000010010001001010000000000
+Retha_tulae                     10000000011010001101010000100100
+Amphitriscoeus_waringi          10000000011010001101010000100102
+Coalcomana_ramos                10000000011010001101010000100102
+Pacytraga_tubiconcha            10000000011010001001010001000100
+Praecaprina_varians             10000000011010001001010001000101
+Caprina_adversa                 10000000011010001001010001000101
+Monopleura_taurica              10000000011010102001010000000000
+Monopleura_varians              10000000011010102001010000000000
+Agriopleura                     20000010011010102000111000001000
+Eoradiolites_plicatus           200010100110101020001?1000001000
+Sauvagesia                      2000111001101010200011100000100?
+Durania_cornupastoris           20001110011110100010111000001000
+Osculigera                      20001101011110100010111000001000
+Pseudosabinia_klinghardti       21001110011010002000111000001002
+Chiapasell_radiolitiformis      201011?0011110000010111000001001
+Horiopleura_dumortieri          10000000011010102001010100000000
+Horiopleura_lamberti            200000?0011010102001010100000010
+Praecaprotina_yaegashii         10000000011010102001010100000?10
+Tepeyacia_corrugata             2010000101101010200101010000?0?0
+Glossomyophorus_costatus        20000010011010002001010200000000
+Himeraelites                    10000000011010102001010010000?00
+Caprotina_striata               10000000011010?02001010200000010
+Plagioptychus                   2?0000000110100020010101000001?1
+Dictyoptychus_morgani           21000000011110101001010000001002
+Icnthyosarcolites_triangularis  10000000011110002000111000001002
+Anitllocaprina_occidentalis     10000000011010002001010000001002
+Hipurites                       20010001011?10102001010000010000
+Barrettia_monilifera            20110001011110102001010000010001
+Pratorreites_omanensis          211000010111101020010100000??001
+Torreites_sanchezi              21100001011110102001010000010001
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 2-32, ord: 1;
+END;

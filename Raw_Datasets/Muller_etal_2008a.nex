@@ -1,0 +1,25 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=21;
+	FORMAT SYMBOLS= " 0 1" MISSING=? GAP=- ;
+MATRIX
+
+Mesosauridae         000000000000000??0000
+Millerettidae        000000000000000000000
+Owenettidae          000000000000000001101
+Acleistorhinus       0000000001?00001?100?
+Bolosaurus_striatus  110101111010100111?1?
+Bolosaurus_grandis   110101????101??11????
+Eudibamus_cursoris   1000011000?00?010?111
+Belebey_vegrandis    111110111101111111111
+Belebey_maximi       1?1?1??????11????????
+Belebey_chengi       1010101???0111101????
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

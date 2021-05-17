@@ -1,0 +1,30 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=14 NCHAR=19;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Alligator                        0?00000000????????0
+Gallus_gallus                    2202032021020100000
+Titanosauridae                   020000010??0????00(01)
+Deinonychus_antirrhopus          (12)??????110?00?11100
+Citipati_osmolskae               1011121110?00?01000
+Troodon_formosus                 2112012011?20?10010
+Macroelongatoolithus_xixiaensis  111112?11(01)?10?11111
+Ornithothoracine                 21?????0211210?????
+Phu_Phok_eggs                    21?????1211210?????
+Lithornis_vulturinus             2???0??0200201000??
+Byronosaurus_jaffei              21?2012011?20?10010
+Lithornis_celetius               2???0??0200201000??
+Rhea_americana                   2202032020020100000
+Hadrosaurid                      020000010??0????000
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 2-3 5-6 8 10-19, ord: 1 4 7 9;
+END;

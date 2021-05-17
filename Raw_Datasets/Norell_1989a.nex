@@ -1,0 +1,21 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=6 NCHAR=12;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup_2    00(01)000000000
+Outgroup_1    0000?0000001
+Gavialids     000200000000
+Crocodylids   011(12)1(01)11(01)111
+Alligatorids  111111100001
+Tomistoma     011200111111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;

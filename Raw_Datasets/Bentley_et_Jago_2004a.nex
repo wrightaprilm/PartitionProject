@@ -1,0 +1,53 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=38 NCHAR=14;
+	FORMAT SYMBOLS= " 0 1 2 3 4" MISSING=? GAP=- ;
+MATRIX
+
+Ellipsocephalus     10000022000001
+Agraulos            01001002012000
+Paralevisia         21000021112010
+Ruichengaspis       01010013122010
+Qiannanagraulos     01?020011?0000
+Batenoides          01?00001002000
+Wuhushania          01?00000010000
+Lenagraulos         21?00020010000
+Jiangjunshania      11010102002000
+Agaso               01?00102?00000
+Litavkaspis         01?01101010000
+Veragraulos         21001100011020
+Paraporilorenzella  01002102010021
+Plesiagraulos       01001103010021
+Parachittidilla     01000103021021
+Poriagraulos        01000103022021
+Metagraulos         01000003022001
+Shahaspis           00000003022101
+Inouyella           00112003110100
+Taitzuia            00102023122010
+Tylotaitzuia        00100020110010
+Wanshania           00?02023120?00
+Skreiaspis          00111103121000
+Latilorenzella      00110002121120
+Arminoepikus        10110003102001
+Tasmacephalus       10112014102000
+Proampyx            00110013102000
+Wuanoides           20110000100100
+Lophodesella        20110002010000
+Ptyctolorenzella    00?10000002000
+Megagraulos         00011102300201
+Chittidilla         00?11000022010
+Houmaia             001020000?2010
+Yunmengshania       00?0001?002020
+Paraplesiagraulos   001000040?0020
+Eotatizuia          00000002022010
+Tianjingshania      000?0000100000
+Taitzuina           00?0000?1?2000
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;
