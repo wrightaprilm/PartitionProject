@@ -20,7 +20,6 @@ moves[mvi++] = mvSPR(tau, weight=n_branches)
 tree_length := phylogeny.treeLength()
 
 #Combine all of our elements into a CTMC. 
-
 for (i in 1:n_data_subsets){
 
 #Set up Gamma-distributed rate variation.
