@@ -1,0 +1,64 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=50 NCHAR=14;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Euparkeria_capensis             00????????????
+Pseudosuchia                    00????????????
+Ornithischia                    10????????????
+Sauropodomorpha                 1000??????????
+Coelophysis_bauri               110(01)0000?00100
+Coelophysis_rhodesiensis        110(01)0000?00100
+Syntarsus_kayentakatae          11000000?00100
+Segisaurus_halli                11000000?0010?
+Allosaurus_fragilis             1100(01)000?00000
+Aerosteon_riocoloradensis       11100000?00000
+Suchomimus_tenerensis           11000000?00000
+Huaxiagnathus_orientalis        110?000????1??
+Scipionyx_samniticus            11???00???????
+Protarchaeopteryx_robusta       110??000??????
+Tyrannosaurus_rex               11011000?10000
+Albertosaurus_sarcophagus       11011000?10000
+Gorgosaurus_libratus            11011000?10000
+Daspltosaurus_torosus           11011000?10000
+UUVP_11689                      11011000?10000
+Beipiaosaurus_inexpectus        11110000?2?000
+Falcarius_utahensis             11110000?10000
+Neimongosaurus_yangi            11110000?20000
+Caudipteryx_zoui                11110??0?1?000
+Oviraptor_philoceratops         11110111110000
+Citipati_osmolskae              11110111110000
+Khaan_mckennai                  11110111010000
+Heyuannia_huangi                11110111010000
+Ingenia_yanshini                11110111010000
+Mei_long                        11110000?11000
+Sinornithoides_youngi           1101000??1?1?0
+Velociraptor_mongoliensis       11000000?11000
+Sinornithosaurus_millenii       11110000?11000
+Bambiraptor_feinbergorum        11110000?11000
+Buitreraptor_gonzalezorum       11110000?10000
+Microraptor_zhaoianus           11110000?11000
+Archaeopteryx_lithographica     11110000?11000
+Sapeornis_chaoyangensis         11110000011000
+Jeholornis_prima                11110000?11000
+Jixiangornis_orientalis         11110000?11000
+Confuciusornis_sanctus          11110000?11000
+Changchengornis_hengdaoziensis  11110000?11000
+Iberomesornis_romerali          11110001111010
+Concornis_lacustris             11110001111010
+Yixianornis_graubai             11010000?11001
+Yanornis_martini                11110000?11100
+Hongshanornis_longicresta       11010000?11100
+Ichthyornis_dispar              11010000?11100
+Gansus_yumenensis               11010000?11100
+Hesperornis_regalis             11010000?11100
+Iaceornis_marshi                11010100?11100
+;
+END;
+
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;
