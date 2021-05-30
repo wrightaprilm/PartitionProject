@@ -1,0 +1,9 @@
+Multi, Subset1 = 1, 4, 8
+Multi, Subset2 = 2, 3, 5, 7
+Multi, Subset3 = 6, 20
+Multi, Subset4 = 9
+Multi, Subset5 = 10, 11, 23, 28
+Multi, Subset6 = 12, 13, 14, 16, 22, 24
+Multi, Subset7 = 15, 25, 26
+Multi, Subset8 = 17, 18, 19, 21
+Multi, Subset9 = 27

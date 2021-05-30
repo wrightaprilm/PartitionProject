@@ -1,0 +1,15 @@
+Multi, Subset1 = 1, 5, 6, 12, 14, 15, 16, 17, 19, 20, 22, 23, 24, 30, 31, 34, 35, 36, 39, 40, 42, 47, 48, 50
+Multi, Subset2 = 2, 11, 13, 18, 27, 29, 37
+Multi, Subset3 = 3, 10
+Multi, Subset4 = 4, 7
+Multi, Subset5 = 8, 21, 26, 41
+Multi, Subset6 = 9
+Multi, Subset7 = 25
+Multi, Subset8 = 28
+Multi, Subset9 = 32
+Multi, Subset10 = 33, 38
+Multi, Subset11 = 43
+Multi, Subset12 = 44
+Multi, Subset13 = 45
+Multi, Subset14 = 46
+Multi, Subset15 = 49
