@@ -19,16 +19,23 @@ moves[mvi++] = mvNNI(tau, weight=2*n_branches)
 moves[mvi++] = mvSPR(tau, weight=n_branches)
 tree_length := phylogeny.treeLength()
 
-#Combine all of our elements into a CTMC.
+alpha_morpho ~ dnUniform(0, 1E6)
+rates_morpho := fnDiscretizeGamma(alpha_morpho, alpha_morpho, 4)
+moves[mvi++] = mvScale(alpha_morpho, lambda =1, weight=2)
 
+#Combine all of our elements into a CTMC.
 n_max_states <- 7
 idx = 1
 morpho_bystate[1] <- data
+
+
 for (i in 1:n_max_states) {
     # make local tmp copy of data
     # only keep character blocks with state space equal to size i
-    morpho_bystate[i] <- morpho
+    morpho_bystate[i] <- data 
     morpho_bystate[i].setNumStatesPartition(i)
+    morpho_bystate[i]
+    morpho_bystate
 	# get number of characters per character size wth i-sized states
     nc = morpho_bystate[i].nchar()
     # for non-empty character blocks
@@ -43,10 +50,13 @@ for (i in 1:n_max_states) {
                                     type="Standard")
 
         # attach the data
-	    m_morph[idx].clamp(morpho_bystate[i])
-
+	m_morph[idx].clamp(morpho_bystate[i])
+        morpho_bystate[i]
         # increment counter
-        idx = idx + 1
-idx
+	idx
+	i
+	idx = idx + 1
+	i = i + 1
+
 }
 }
