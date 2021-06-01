@@ -1,0 +1,59 @@
+################################################################################
+#
+# RevBayes Example: Inferring a Phylogeny of Fossil Bears Using the Mk Model
+#
+# This file: Runs the full MCMC ...
+#
+# authors:  April M. Wright, Michael J. Landis
+#
+################################################################################
+
+#######################
+# Reading in the Data #
+#######################
+# Import the morphological character matrix #
+# this file contains only the taxa for which morphological characters are available #
+
+morpho = readDiscreteCharacterData("matrix")
+
+
+## helpers
+moves    = VectorMoves()
+monitors = VectorMonitors()
+taxa <- morpho.names()
+n_taxa <- taxa.size()
+n_branches <- 2 * n_taxa - 3
+print("Loading Partitioned Analysis")
+# Load the model files
+source("Scripts/Mk_parted_Final.Rev") # Morphological character change model
+
+########
+# MCMC #
+########
+
+# initialize the model object #
+mymodel = model(phylogeny)
+# Create a vector of monitors #
+# 1. for the full model #
+monitors.append(mnModel(filename="output/parted.log", printgen=10))
+# 2. the tree #
+monitors.append(mnFile(filename="output/parted.trees", printgen=10, phylogeny))
+# 3. and a few select parameters to be printed to the screen #
+monitors.append(mnScreen(printgen=100))
+
+# Initialize the MCMC object #
+mymcmc = mcmc(mymodel, monitors, moves)
+
+# Run the MCMC #
+mymcmc.run(generations=1000000)
+
+# Read in the tree trace and construct the consensus tree tree #
+trace = readTreeTrace("output/simple.trees", treetype="non-clock")
+trace.setBurnin(0.25)
+
+# Summarize tree trace and the consensus tree to file
+mapTree(trace, file="output/parted.map.tre")
+consensusTree(trace, file="output/parted.majrule.tre")
+
+# Quit RevBayes #
+q()
