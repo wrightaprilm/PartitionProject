@@ -40,14 +40,15 @@ for(i in 1:length(partitions))
 
 #convert partitions to string
 partitions <- lapply(partitions, toString)
-partitions <- stringr::str_c(paste("[", partitions, "]"))
+#partitions <- stringr::str_c(paste(partitions, ""))
 
 #get number of partitions
-n_partitions <- length(partitions)
+#n_partitions <- length(partitions)
 
-partitions <- toString(unlist(partitions))
-write.csv(partitions, "parts.tsv")
-
+#partitions <- toString(unlist(partitions))
+for (line in partitions){
+cat(line, file = "parts.tsv" , append = T, sep = "\n")
+}
 #Mk_parted <- "/Users/april/projects/Partitions/Scripts/Mk_parted.Rev"
 #Mk_parted_Final <- "/Users/april/projects/Partitions/Scripts/Mk_parted_Final.Rev"
 
