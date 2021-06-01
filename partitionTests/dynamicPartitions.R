@@ -5,24 +5,22 @@ args = commandArgs(trailingOnly=TRUE)
 #          "BIC"                                                      #paritioning scheme
 #)
 
+wd <- getwd()
 #get paritioning scheme
 partitioningScheme <- args[3]
-
 #get path to directory containing partitioning schemes
-wd <- args[1]
-formattedWd <- stringr::str_replace(wd, "/c/", "c://")
-schemePath <- gsub("data/.*", paste("PartitioningSchemes/", partitioningScheme, sep = "") , formattedWd)
-
+#formattedWd <- stringr::str_replace(wd, "/c/", "c://")
+schemePath <-  paste(wd, "/PartitioningSchemes/", partitioningScheme, sep = "")
 
 #get name of file to search for in the directory determined by the partitioning scheme
 fileName <- args[2]
 fileNameNoExtension <- unlist(stringr::str_split(fileName, "\\."))[1]
+fileNameNoExtensionBasePath <- unlist(stringr::str_split(fileNameNoExtension, "/"))[2]
+
 
 namesInSchemePath <- list.files(schemePath)
-nameInDirectory <- grep(fileNameNoExtension, namesInSchemePath, value = T)
-
+nameInDirectory <- grep(fileNameNoExtensionBasePath, namesInSchemePath, value = T)
 fullPathToPartition <- paste(schemePath, "/", nameInDirectory, sep = "")
-
 
 #now to change to file
 #read file containing partitions
@@ -49,10 +47,10 @@ n_partitions <- length(partitions)
 
 partitions <- toString(unlist(partitions))
 partitions <- stringr::str_c(paste("[", partitions, "]"))
+partitions
 
-
-Mk_parted <- "C://Users/caleb/OneDrive/Desktop/PartitionProject/Scripts/Mk_parted.Rev"
-Mk_parted_Final <- "C://Users/caleb/OneDrive/Desktop/PartitionProject/Scripts/Mk_parted_Final.Rev"
+Mk_parted <- "/Users/april/projects/Partitions/Scripts/Mk_parted.Rev"
+Mk_parted_Final <- "/Users/april/projects/Partitions/Scripts/Mk_parted_Final.Rev"
 
 mkPartedText <- unlist(readLines(Mk_parted))
 mkPartedText <- unlist(c(paste("n_partitions <- ", n_partitions, "\npartitions <- ", partitions, "\n", sep = " "), mkPartedText))
@@ -60,10 +58,5 @@ mkPartedText <- unlist(c(paste("n_partitions <- ", n_partitions, "\npartitions <
 loopStart <- grep("excludeCharacter", mkPartedText)
 mkPartedText[loopStart - 1] <- paste("for(i in 1:n_partitions){")
 mkPartedText[loopStart] <- "morpho_bystate[i].excludeCharacter(partitions[i])"
-
-cat(mkPartedText, file = Mk_parted_Final , append = F, sep = "\n")
-
-
-
-
-
+print("Creating Final File in Scripts Directory")
+cat(mkPartedText, file = "Scripts/Mk_parted_Final.Rev" , append = F, sep = "\n")
