@@ -1,7 +1,8 @@
+partitions = readDataDelimitedFile("part.tsv", delimiter = ",")
+print("Processing partitioned Script")
 
 br_len_lambda ~ dnExp(0.2)
 moves.append(mvScale(br_len_lambda, weight=2))
-
 
 # Set up Gamma-distributed rate variation.
 alpha_morpho ~ dnUniform( 0.0, 1E6 )
@@ -9,6 +10,7 @@ rates_morpho := fnDiscretizeGamma( alpha_morpho, alpha_morpho, 4 )
 
 # Moves on the parameters to the Gamma distribution.
 moves.append( mvScale(alpha_morpho, lambda=1, weight=2.0) )
+
 
 ## Tree definition
 
@@ -20,34 +22,41 @@ tree_length := phylogeny.treeLength()
 
 # First, we establish our partitionfinder partitions
 
-
-i = 1
-morpho_bystate[i] <- morpho
 # In the below, what we do is make a vector of data partitions in which we have excluded the other partitions.
 # This is tricky because you'll need to find some way to get in the number of partitions and which characters
 # need to be excluded from which
-for (i in number_subsets){
-morpho_bystate[i].excludeCharacter(v(2, 5, 6, 8, 9, 10, 11, 17, 19, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 37, 46, 47, 49, 51, 55, 58, 59, 66))
-i = i+1
+x = 1
+for (x in 1:partitions.size()){
+  excludeList <- v(0)
+  morpho_part[x] <- morpho
+  for (z in partitions[x]){
+    excludeList <- v(1*z)
+    print(excludeList)
+    }
+  morpho_part[x].excludeCharacter(excludeList)
+  x = x+1
 }
 
-
-n_max_states <- 7
-idx = 1
+n_max_states <- 10
 i=1
-morpho_bystate[1] <- morpho
-for (i in 2:n_max_states) {
-    morpho_bystate[i] <- morpho                                # make local tmp copy of data
-    morpho_bystate[i].setNumStatesPartition(i)                 # only keep character blocks with state space equal to size i
-    nc = morpho_bystate[i].nchar()                             # get number of characters per character size with i-sized states
+idx = 1
+for (y in 1:morpho_part.size()){
+  morpho_bystate[y] <- morpho_part[y]
+  for (i in 2:n_max_states) {
+    morpho_bystate[y].setNumStatesPartition(i)                 # only keep character blocks with state space equal to size i
+    nc = morpho_bystate[y].nchar()
+    nc                         # get number of characters per character size with i-sized states
     if (nc > 0) {
-              Q[idx] <- fnJC(i)
+    Q[idx] <- fnJC(i)
 
-      m_morph[idx] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
+      m_morph[idx] ~ dnPhyloCTMC(tree=phylogeny, siteRates=alpha_morpho,
                               Q=Q[idx], type="Standard")
-      m_morph[idx].clamp(morpho_bystate[i])
-
-      idx = idx + 1                                          # increment counter
-      idx
+      m_morph[idx].clamp(morpho_bystate[y])
+      m_morph[idx]
+      idx = idx + 1
+                                   # increment counter
+      }
+      i = i + 1
     }
+      y = y+1
 }
