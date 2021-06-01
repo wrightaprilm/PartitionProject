@@ -46,17 +46,16 @@ partitions <- stringr::str_c(paste("[", partitions, "]"))
 n_partitions <- length(partitions)
 
 partitions <- toString(unlist(partitions))
-partitions <- stringr::str_c(paste("[", partitions, "]"))
-partitions
+write.csv(partitions, "parts.tsv")
 
-Mk_parted <- "/Users/april/projects/Partitions/Scripts/Mk_parted.Rev"
-Mk_parted_Final <- "/Users/april/projects/Partitions/Scripts/Mk_parted_Final.Rev"
+#Mk_parted <- "/Users/april/projects/Partitions/Scripts/Mk_parted.Rev"
+#Mk_parted_Final <- "/Users/april/projects/Partitions/Scripts/Mk_parted_Final.Rev"
 
-mkPartedText <- unlist(readLines(Mk_parted))
-mkPartedText <- unlist(c(paste("n_partitions <- ", n_partitions, "\npartitions <- ", partitions, "\n", sep = " "), mkPartedText))
+#mkPartedText <- unlist(readLines(Mk_parted))
+#mkPartedText <- unlist(c(paste("n_partitions <- ", n_partitions, "\npartitions <- ", partitions, "\n", sep = " "), mkPartedText))
 
-loopStart <- grep("excludeCharacter", mkPartedText)
-mkPartedText[loopStart - 1] <- paste("for(i in 1:n_partitions){")
-mkPartedText[loopStart] <- "morpho_bystate[i].excludeCharacter(partitions[i])"
-print("Creating Final File in Scripts Directory")
-cat(mkPartedText, file = "Scripts/Mk_parted_Final.Rev" , append = F, sep = "\n")
+#loopStart <- grep("excludeCharacter", mkPartedText)
+#mkPartedText[loopStart - 1] <- paste("for(i in 1:n_partitions){")
+#mkPartedText[loopStart] <- "morpho_bystate[i].excludeCharacter(partitions[i])"
+#print("Creating Final File in Scripts Directory")
+#cat(mkPartedText, file = "Scripts/Mk_parted_Final.Rev" , append = F, sep = "\n")
